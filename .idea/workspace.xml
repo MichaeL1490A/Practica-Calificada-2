@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e85f9d72-5eb2-4bd6-8cb8-4a7acda5cd02" name="Changes" comment="Inicio PC2">
+    <list default="true" id="e85f9d72-5eb2-4bd6-8cb8-4a7acda5cd02" name="Changes" comment="Creating Pregunta 0 for first question.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +91,7 @@
       <workItem from="1654178143800" duration="498000" />
       <workItem from="1654178708119" duration="1156000" />
       <workItem from="1654179947576" duration="118000" />
-      <workItem from="1654180927813" duration="444000" />
+      <workItem from="1654180927813" duration="1539000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio PC2">
       <created>1654179758569</created>
@@ -99,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654179758569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Creating Pregunta 0 for first question.">
+      <created>1654181494390</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654181494390</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicio PC2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicio PC2" />
+    <MESSAGE value="Creating Pregunta 0 for first question." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating Pregunta 0 for first question." />
   </component>
 </project>
