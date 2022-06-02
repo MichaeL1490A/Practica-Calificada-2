@@ -2,6 +2,7 @@
 
 ## Pregunta 0
 
+![image info](./images/imagen1.png)
 
 ## Pregunta 1
 
