@@ -31,6 +31,12 @@ y finalmente por ello se imprimen ambos cada uno en su respectiva lista.
 
 ## Pregunta 1
 
+![image info](./images/imagen6.png)
+Podemos observar que directamente al ejecutar el test no se alcanza a realizar
+algún test en la clase main. Ya que en esta clase no se ejecuta ningún método 
+que se evalué en el test, por tanto su coverage es de 0%. En el Flight hay un
+que no se ejecuta, el cual vendría a ser getFlightType, así como tampoco se corren
+las excepciones. Por lo que haría falta una revisión para que estas sean ejecutadas.
 ## Pregunta 2
 
 ## Pregunta 3
