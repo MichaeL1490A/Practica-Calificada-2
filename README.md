@@ -1,4 +1,8 @@
 # PC2 DESARROLO DE SOFTWARE
+
+## Pregunta 0
+
+
 ## Pregunta 1
 
 ## Pregunta 2

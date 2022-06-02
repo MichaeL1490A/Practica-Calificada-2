@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e85f9d72-5eb2-4bd6-8cb8-4a7acda5cd02" name="Changes" comment="Inicio PC2">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,14 @@
       <recent name="C:\Users\Hitee\IdeaProjects\PC2\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AirportTest$EconomyFlightTest">
+  <component name="RunManager" selected="Application.Airport">
+    <configuration name="Airport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Airport" />
+      <module name="PC2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AirportTest$EconomyFlightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PC2" />
       <option name="PACKAGE_NAME" value="AirportTest" />
@@ -67,6 +74,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Airport" />
         <item itemvalue="JUnit.AirportTest$EconomyFlightTest" />
         <item itemvalue="JUnit.AirportTest" />
       </list>
@@ -83,6 +91,7 @@
       <workItem from="1654178143800" duration="498000" />
       <workItem from="1654178708119" duration="1156000" />
       <workItem from="1654179947576" duration="118000" />
+      <workItem from="1654180927813" duration="444000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio PC2">
       <created>1654179758569</created>
