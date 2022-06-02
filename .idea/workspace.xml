@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e85f9d72-5eb2-4bd6-8cb8-4a7acda5cd02" name="Changes" comment="Pregunta 0 solved.">
-      <change afterPath="$PROJECT_DIR$/images/imagen6.png" afterDir="false" />
+    <list default="true" id="e85f9d72-5eb2-4bd6-8cb8-4a7acda5cd02" name="Changes" comment="Pregunta 1 solved.">
+      <change afterPath="$PROJECT_DIR$/images/imagen7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fase1/Pruebas/AirportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fase1/Pruebas/AirportTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <workItem from="1654178143800" duration="498000" />
       <workItem from="1654178708119" duration="1156000" />
       <workItem from="1654179947576" duration="118000" />
-      <workItem from="1654180927813" duration="3769000" />
+      <workItem from="1654180927813" duration="6561000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio PC2">
       <created>1654179758569</created>
@@ -131,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654182492428</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pregunta 1 solved.">
+      <created>1654184826384</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654184826384</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,9 +158,10 @@
     <MESSAGE value="Inicio PC2" />
     <MESSAGE value="Creating Pregunta 0 for first question." />
     <MESSAGE value="Pregunta 0 solved." />
-    <option name="LAST_COMMIT_MESSAGE" value="Pregunta 0 solved." />
+    <MESSAGE value="Pregunta 1 solved." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pregunta 1 solved." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Practica_Calificada_2$AirportTest.ic" NAME="AirportTest Coverage Results" MODIFIED="1654184702573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Practica_Calificada_2$AirportTest.ic" NAME="AirportTest Coverage Results" MODIFIED="1654187713294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

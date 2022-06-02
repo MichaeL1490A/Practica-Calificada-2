@@ -37,7 +37,19 @@ algún test en la clase main. Ya que en esta clase no se ejecuta ningún método
 que se evalué en el test, por tanto su coverage es de 0%. En el Flight hay un
 que no se ejecuta, el cual vendría a ser getFlightType, así como tampoco se corren
 las excepciones. Por lo que haría falta una revisión para que estas sean ejecutadas.
+
 ## Pregunta 2
+
+Jhon realiza la refactorización para que sus pruebas cubran la mayor parte del código
+ya que en la fase actual los test no cubren el total del código de producción.
+
+## Pregunta 2.5
+
+![image info](./images/imagen7.png)
+Podemos apreciar que ahora las pruebas pueden cubrir absolutamente todos los
+métodos del código de producción. Gracias a la refactorización ahora si es posible
+evaluar por completo tanto los métodos de BusinessFlight y EconomyFlight, ya que
+son clases extendidas de la clase Flight donde fueron declaradas como abstractas.
 
 ## Pregunta 3
 
