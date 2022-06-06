@@ -42,10 +42,11 @@ Ejecutamos  la prueba AirportTest  del directorio Fase1/Pruebas con la opción d
 para poder ver a detalle hasta que punto y si se está usando el código que hemos realizado
 
 Podemos observar que directamente al ejecutar el test no se alcanza a realizar
-algún test en la clase main, ya que en esta clase no se ejecuta ninguna línea 
-que se evalúe en el test, por tanto, su coverage es de 0%. En el Flight hay un
+algún test en la clase main, ya que en esta clase no se ejecuta ningún método 
+que se evalúe en el test, por tanto su coverage es de 0%. En el Flight hay un
 método que no se ejecuta, el cual vendría a ser getFlightType, así como tampoco se corren
-las excepciones. Por lo que haría falta una revisión para que estas sean ejecutadas.
+las excepciones y esto hace que su coverage no sea del 100%. Por lo que haría falta una revisión para que estas 
+sean ejecutadas y poder ver si estas partes del código están bien implementadas y funcionan como deberían hacerlo.
 
 ## Pregunta 2
 
