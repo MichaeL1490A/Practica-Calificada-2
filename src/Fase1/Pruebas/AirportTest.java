@@ -52,7 +52,7 @@ public class AirportTest {
 
         @BeforeEach
         void setUp() {
-            businessFlight = new Flight("2", "Business");
+            businessFlight = new Flight("2", "Negocios");
         }
 
         @Test
