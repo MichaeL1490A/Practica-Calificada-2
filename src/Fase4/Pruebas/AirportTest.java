@@ -107,5 +107,62 @@ public class AirportTest {
         }
     }
 
+
 // Completa la prueba para PremiumFlight de acuerdo a la logica comercial dada. Pregunta 6
 
+    @DisplayName("Dado que hay un vuelo Premium")
+    @Nested
+    class PremiumFlightTest{
+
+        private Flight premiumFlight;
+        private Passenger jessica;
+        private Passenger cesar;
+
+        @BeforeEach
+        void setUp() {
+            premiumFlight = new PremiumFlight("3");
+            jessica = new Passenger("Jessica", false);
+            cesar = new Passenger("Cesar", true);
+        }
+
+        @Nested
+        @DisplayName("Cuando tenemos un pasajero VIP")
+        class VipPassenger {
+            @Test
+            @DisplayName("El pasajero es agregado al vuelo premium")
+            public void testPremiumFlightVipPassenger() {
+                assertAll("Verifica todas las condiciones para un pasajero VIP y un vuelo premium",
+                        () -> assertEquals(true, premiumFlight.addPassenger(cesar)),
+                        () -> assertEquals(1, premiumFlight.getPassengersList().size()),
+                        () -> assertEquals("Cesar", premiumFlight.getPassengersList().get(0).getName())
+                );
+            }
+        }
+        @Nested
+        @DisplayName("Cuando tenemos un pasajero regular")
+        class RegularPassenger {
+            @Test
+            @DisplayName("El pasajero es rechazado del vuelo premium")
+            public void testPremiumFlightRegularPassenger() {
+                assertAll("Verifica todas las condiciones para un pasajero regular y un vuelo premium",
+                        () -> assertEquals(false, premiumFlight.addPassenger(jessica)),
+                        () -> assertEquals(0, premiumFlight.getPassengersList().size())
+                );
+            }
+        }
+        @Nested
+        @DisplayName("Cuando tenemos que remover un pasajero")
+        class RemovePassenger {
+            @Test
+            @DisplayName("El pasajero sera removido del vuelo premium")
+            public void testPremiumFlightRemovePassenger() {
+                assertAll("Verifica todas las condiciones para remover un pasajero",
+                        () -> assertEquals(true, premiumFlight.addPassenger(cesar)),
+                        () -> assertEquals(1, premiumFlight.getPassengersList().size()),
+                        () -> assertEquals(true, premiumFlight.removePassenger(cesar)),
+                        () -> assertEquals(0, premiumFlight.getPassengersList().size())
+                );
+            }
+        }
+    }
+}

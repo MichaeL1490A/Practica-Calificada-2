@@ -69,13 +69,97 @@ más entendible
 
 Esta regla consiste en que si ves en tu proyecto tres fragmetos de código similares
 es una señal de que debemos refactorizar. Y esto se relaciona con nuestro problema 
-porque al hacer el tipo PremiunFlight notamos que el código seria similar al de
+porque al hacer el tipo PremiumFlight notamos que el código seria similar al de
 EconomyFlight y BusinessFlight.
 
 ## Pregunta 5
 
+El diseño inicial de la clase PremiumFlight es el siguiente:
+
+    public class PremiumFlight extends Flight {
+
+        // Diseño inicial de la clase PremiumFlight. Pregunta 5
+        public PremiumFlight(String id) {
+            super(id);
+        }
+        @Override
+        public boolean addPassenger(Passenger passenger){
+            return false;
+        }
+    
+        @Override
+        public boolean removePassenger(Passenger passenger){
+            return false;
+        }
+    }
+
 ## Pregunta 6
 
+El código de prueba para el vuelo Premium será el siguiente
+
+    @DisplayName("Dado que hay un vuelo Premium")
+    @Nested
+    class PremiumFlightTest{
+
+        private Flight premiumFlight;
+        private Passenger jessica;
+        private Passenger cesar;
+
+        @BeforeEach
+        void setUp() {
+            premiumFlight = new PremiumFlight("3");
+            jessica = new Passenger("Jessica", false);
+            cesar = new Passenger("Cesar", true);
+        }
+
+        @Nested
+        @DisplayName("Cuando tenemos un pasajero VIP")
+        class VipPassenger {
+            @Test
+            @DisplayName("El pasajero es agregado al vuelo premium")
+            public void testPremiumFlightVipPassenger() {
+                assertAll("Verifica todas las condiciones para un pasajero VIP y un vuelo premium",
+                        () -> assertEquals(true, premiumFlight.addPassenger(cesar)),
+                        () -> assertEquals(1, premiumFlight.getPassengersList().size()),
+                        () -> assertEquals("Cesar", premiumFlight.getPassengersList().get(0).getName())
+                );
+            }
+        }
+        @Nested
+        @DisplayName("Cuando tenemos un pasajero regular")
+        class RegularPassenger {
+            @Test
+            @DisplayName("El pasajero es rechazado del vuelo premium")
+            public void testPremiumFlightRegularPassenger() {
+                assertAll("Verifica todas las condiciones para un pasajero regular y un vuelo premium",
+                        () -> assertEquals(false, premiumFlight.addPassenger(jessica)),
+                        () -> assertEquals(0, premiumFlight.getPassengersList().size())
+                );
+            }
+        }
+        @Nested
+        @DisplayName("Cuando tenemos que remover un pasajero")
+        class RemovePassenger {
+            @Test
+            @DisplayName("El pasajero sera removido del vuelo premium")
+            public void testPremiumFlightRemovePassenger() {
+                assertAll("Verifica todas las condiciones para remover un pasajero",
+                        () -> assertEquals(true, premiumFlight.addPassenger(cesar)),
+                        () -> assertEquals(1, premiumFlight.getPassengersList().size()),
+                        () -> assertEquals(true, premiumFlight.removePassenger(cesar)),
+                        () -> assertEquals(0, premiumFlight.getPassengersList().size())
+                );
+            }
+        }
+    }
+
+Como es normal y estamos utilizando TDD algunas pruebas fallaran ya que aun no esta implementada
+la lógica comercial del programa
+
+![img.png](images/imagen11.png)
+
 ## Pregunta 7
+
+
 
 ## Pregunta 8
