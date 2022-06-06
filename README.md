@@ -188,9 +188,35 @@ Es el código de la clase PremiumFlight con la lógica comercial implementada
         }
     }
 
+Ejecutamos las pruebas para el código anterior
 
-
-
-
+![img.png](images/imagen12.png)
 
 ## Pregunta 8
+
+La prueba para que un pasajero sea agregado una sola vez sigue la siguiente
+lógica:
+
+    @DisplayName("Entonces no puedes agregarlo a un vuelo premium mas de una vez")
+    @RepeatedTest(5)
+    public void testPremiumFlightVipPassengerAddedOnlyOnce(RepetitionInfo repetitionInfo) {
+        for (int i = 0; i < repetitionInfo.getCurrentRepetition(); i++) {
+            premiumFlight.addPassenger(cesar);
+        }
+        assertAll("Verifica que un pasajero VIP se pueda agregar a un vuelo premium solo una vez",
+                () -> assertEquals(1, premiumFlight.getPassengersSet().size()),
+                () -> assertTrue(premiumFlight.getPassengersSet().contains(cesar)),
+                () -> assertTrue(new ArrayList<>(premiumFlight.getPassengersSet()).get(0).getName().equals("Cesar"))
+        );
+    }
+
+Lo mismo es para los vuelos económicos y de negocios luego cuando corremos las pruebas con cobertura
+nos muestra el siguiente resultado.
+
+Todas nuestras pruebas pasaron
+
+![img.png](images/imagen13.png)
+
+Con una cobertura del 100%
+
+![img.png](images/imagen14.png)

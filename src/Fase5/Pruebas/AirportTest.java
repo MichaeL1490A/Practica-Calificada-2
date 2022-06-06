@@ -191,7 +191,6 @@ public class AirportTest {
                 );
             }
         }
-
         @Nested
         @DisplayName("Cuando tenemos que remover un pasajero")
         class RemovePassenger {
