@@ -41,7 +41,9 @@ public class AirportTest {
             @DisplayName("Entonces no puedes agregarlo a un vuelo economico mas de una vez")
             @RepeatedTest(5)
             public void testEconomyFlightRegularPassengerAddedOnlyOnce(RepetitionInfo repetitionInfo) {
-              // Completar el código. Pregunta 8
+                // Completar el código. Pregunta 8
+            }
+        }
 
         @Nested
         @DisplayName("Cuando tenemos un pasajero VIP")
@@ -134,8 +136,34 @@ public class AirportTest {
         }
     }
 
-   // Recuerda que debes completar esto del ejercicio anterior 6
+    // Recuerda que debes completar esto del ejercicio anterior 6
+    @DisplayName("Dado que hay un vuelo Premium")
+    @Nested
+    class PremiumFlightTest {
 
+        private Flight premiumFlight;
+        private Passenger jessica;
+        private Passenger cesar;
+
+        @BeforeEach
+        void setUp() {
+            premiumFlight = new PremiumFlight("3");
+            jessica = new Passenger("Jessica", false);
+            cesar = new Passenger("Cesar", true);
+        }
+
+        @Nested
+        @DisplayName("Cuando tenemos un pasajero VIP")
+        class VipPassenger {
+            @Test
+            @DisplayName("El pasajero es agregado al vuelo premium")
+            public void testPremiumFlightVipPassenger() {
+                assertAll("Verifica todas las condiciones para un pasajero VIP y un vuelo premium",
+                        () -> assertEquals(true, premiumFlight.addPassenger(cesar)),
+                        () -> assertEquals(1, premiumFlight.getPassengersSet().size()),
+                        () -> assertEquals("Cesar", new ArrayList<>(premiumFlight.getPassengersSet()).get(0).getName())
+                );
+            }
 
             @DisplayName("Entonces no puedes agregarlo a un vuelo premium mas de una vez")
             @RepeatedTest(5)
@@ -147,6 +175,34 @@ public class AirportTest {
                         () -> assertEquals(1, premiumFlight.getPassengersSet().size()),
                         () -> assertTrue(premiumFlight.getPassengersSet().contains(cesar)),
                         () -> assertTrue(new ArrayList<>(premiumFlight.getPassengersSet()).get(0).getName().equals("Cesar"))
+                );
+            }
+        }
+
+        @Nested
+        @DisplayName("Cuando tenemos un pasajero regular")
+        class RegularPassenger {
+            @Test
+            @DisplayName("El pasajero es rechazado del vuelo premium")
+            public void testPremiumFlightRegularPassenger() {
+                assertAll("Verifica todas las condiciones para un pasajero regular y un vuelo premium",
+                        () -> assertEquals(false, premiumFlight.addPassenger(jessica)),
+                        () -> assertEquals(0, premiumFlight.getPassengersSet().size())
+                );
+            }
+        }
+
+        @Nested
+        @DisplayName("Cuando tenemos que remover un pasajero")
+        class RemovePassenger {
+            @Test
+            @DisplayName("El pasajero sera removido del vuelo premium")
+            public void testPremiumFlightRemovePassenger() {
+                assertAll("Verifica todas las condiciones para remover un pasajero",
+                        () -> assertEquals(true, premiumFlight.addPassenger(cesar)),
+                        () -> assertEquals(1, premiumFlight.getPassengersSet().size()),
+                        () -> assertEquals(true, premiumFlight.removePassenger(cesar)),
+                        () -> assertEquals(0, premiumFlight.getPassengersSet().size())
                 );
             }
         }
