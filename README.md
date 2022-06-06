@@ -14,20 +14,26 @@ mientras que Jessica se declara como una pasajera no VIP.
 ![image info](./images/imagen3.png)
 
 
-Entonces en el programa añadimos a Cesar al listado de pasajeros del vuelo de
-negocios, para posteriormente tratar de removerlo. Pero en el código Flight
-podemos ver que a en el vuelo del tipo negocios, el código por defecto no remueve
-al pasajero porque para ser añadido por defecto este tiene que ser VIP.
-Luego tratamos de añadir a Jessica al listado de pasajeros en el vuelo de negocios
-pero en el código Flight podemos ver que al estar definida como no VIP, simplemente
-no se le añade al listado.
+En las siguientes líneas del programa (siguiente imagen), primero agregamos
+a Cesar en el vuelo de tipo Negocios y es agregado satisfactoriamente a este vuelo 
+por ser un pasajero VIP (basado en el método addPassenger de la clase Flight), en la siguiente línea tratamos de remover a Cesar
+del vuelo de Negocios pero al ser un vuelo de tipo Negocios nos retorna false directamente,
+impidiendo que podamos removerlo (basado en el método removePassenger de la clase Flight). 
+
+Luego tratamos de agregar a Jessica al vuelo de tipo Negocios, pero al no ser un 
+pasajero VIP es rechazada (basado en el método removePassenger de la clase Flight) 
+y no se agrega a este vuelo. En la siguiente línea agregamos a Jessica al vuelo de tipo 
+Economico y es agregada satisfactoriamente (basado en el método addPassenger de la clase Flight)
 
 ![image info](./images/imagen4.png)
 
-Luego si pasa cuando se le añade al listado de económicos,
-y finalmente por ello se imprimen ambos cada uno en su respectiva lista.
+Finalmente en las últimas líneas de la clase Airport imprimimos los pasajeros que hay en cada vuelo (siguiente imagen).
 
 ![image info](./images/imagen5.png)
+
+Y obtenemos el siguiente resultado.
+
+![image info](./images/imagen1.png)
 
 ## Pregunta 1
 
