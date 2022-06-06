@@ -38,10 +38,13 @@ Y obtenemos el siguiente resultado.
 ## Pregunta 1
 
 ![image info](./images/imagen6.png)
+Ejecutamos  la prueba AirportTest  del directorio Fase1/Pruebas con la opción de coverage 
+para poder ver a detalle hasta que punto y si se está usando el código que hemos realizado
+
 Podemos observar que directamente al ejecutar el test no se alcanza a realizar
-algún test en la clase main. Ya que en esta clase no se ejecuta ningún método 
+algún test en la clase main, ya que en esta clase no se ejecuta ninguna línea 
 que se evalúe en el test, por tanto, su coverage es de 0%. En el Flight hay un
-que no se ejecuta, el cual vendría a ser getFlightType, así como tampoco se corren
+método que no se ejecuta, el cual vendría a ser getFlightType, así como tampoco se corren
 las excepciones. Por lo que haría falta una revisión para que estas sean ejecutadas.
 
 ## Pregunta 2
@@ -165,6 +168,28 @@ la lógica comercial del programa
 ![img.png](images/imagen11.png)
 
 ## Pregunta 7
+Es el código de la clase PremiumFlight con la lógica comercial implementada
+
+
+    public class PremiumFlight extends Flight {
+    
+        // Diseño de la lógica comercial para los pasajeros VIP.Pregunta 7
+        public PremiumFlight(String id) {
+            super(id);
+        }
+        @Override
+        public boolean addPassenger(Passenger passenger){
+            return false;
+        }
+    
+        @Override
+        public boolean removePassenger(Passenger passenger){
+            return false;
+        }
+    }
+
+
+
 
 
 
