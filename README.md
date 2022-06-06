@@ -67,6 +67,11 @@ más entendible
 
 ## Pregunta 4
 
+Esta regla consiste en que si ves en tu proyecto tres fragmetos de código similares
+es una señal de que debemos refactorizar. Y esto se relaciona con nuestro problema 
+porque al hacer el tipo PremiunFlight notamos que el código seria similar al de
+EconomyFlight y BusinessFlight.
+
 ## Pregunta 5
 
 ## Pregunta 6
