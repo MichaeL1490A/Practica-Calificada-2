@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e85f9d72-5eb2-4bd6-8cb8-4a7acda5cd02" name="Changes" comment="Inicio PC2">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Anterior/Produccion/Airport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Anterior/Produccion/Airport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2A1Xc1V8FSvNyVGxylMmECX4AAf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -45,14 +55,7 @@
       <recent name="C:\Users\Hitee\IdeaProjects\PC2\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Airport">
-    <configuration name="Airport" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Airport" />
-      <module name="PC2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.AirportTest">
     <configuration name="AirportTest$EconomyFlightTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PC2" />
       <option name="PACKAGE_NAME" value="AirportTest" />
@@ -62,10 +65,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AirportTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="PC2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AirportTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AirportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PC2" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AirportTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PC2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AirportTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,8 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Airport" />
-        <item itemvalue="JUnit.AirportTest$EconomyFlightTest" />
+        <item itemvalue="JUnit.AirportTest" />
         <item itemvalue="JUnit.AirportTest" />
       </list>
     </recent_temporary>
@@ -90,7 +117,8 @@
       <workItem from="1654178143800" duration="498000" />
       <workItem from="1654178708119" duration="1156000" />
       <workItem from="1654179947576" duration="118000" />
-      <workItem from="1654180927813" duration="444000" />
+      <workItem from="1654180772154" duration="4867000" />
+      <workItem from="1654476544898" duration="421000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio PC2">
       <created>1654179758569</created>
@@ -99,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654179758569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Inicio PC2">
+      <created>1654181118802</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654181118802</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

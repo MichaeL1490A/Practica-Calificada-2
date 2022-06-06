@@ -21,6 +21,5 @@ public class Airport {
         for (Passenger passenger : economyFlight.getPassengersList()) {
             System.out.println(passenger.getName());
         }
-        System.out.println("Es una prueba");
     }
 }
